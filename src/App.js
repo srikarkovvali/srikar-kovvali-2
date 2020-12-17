@@ -55,7 +55,7 @@ class App extends React.Component {
 
   componentDidMount() {
     // get all entities - GET
-      fetch("https://o79z9jqhb0.execute-api.us-west-2.amazonaws.com/production/patients/", {
+      fetch("https://o79z9jqhb0.execute-api.us-west-2.amazonaws.com/development/patients/", {
           "method": "GET",
           "headers": {
               "content-type": "text/plain",
@@ -79,7 +79,7 @@ class App extends React.Component {
     e.preventDefault();
 
     // creates entity
-    fetch("https://o79z9jqhb0.execute-api.us-west-2.amazonaws.com/production/patients/", {
+    fetch("https://o79z9jqhb0.execute-api.us-west-2.amazonaws.com/development/patients/", {
       "method": "POST",
       "headers": {
         "content-type": "text/plain",
